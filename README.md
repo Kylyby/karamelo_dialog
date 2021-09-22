@@ -1,5 +1,5 @@
 # karamelo_dialog
-##Karamelo ajuda você a criar facilmente uma pergunta com opções no console python
+## Karamelo ajuda você a criar facilmente uma pergunta com opções no console python
 
 Para utilizá-lo, você deve primeiramente instalar uma dependência com o sequinte comando no terminal/shell:
 
@@ -17,7 +17,7 @@ agora digite os seguintes comandos no shell para instalar o Karamelo no replit
   
 no terceiro passo, [pasta do projeto] é o nome da pasta do seu projeto, se você tiver um projeto chamado "teste python", por exemplo, o nome da sua pasta será "teste-python" (sem as aspas)
   
-###Como usar:
+### Como usar:
   
 comece importando o arquivo:
   
