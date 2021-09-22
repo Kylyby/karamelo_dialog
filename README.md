@@ -10,12 +10,12 @@ agora digite os seguintes comandos no shell para instalar o Karamelo no replit
 
   git clone https://github.com/Kylyby/karamelo_dialog.git
 
-  mv /home/runner/<pasta do projeto>/karamelo_dialog/karamelo.py /home/runner/<pasta do projeto>/
+  mv /home/runner/[pasta do projeto]/karamelo_dialog/karamelo.py /home/runner/[pasta do projeto]/
   
   rm -rf karamelo_dialog
 
   
-no terceiro passo, <pasta do projeto> é o nome da pasta do seu projeto, se você tiver um projeto chamado "teste python", por exemplo, o nome da sua pasta será "teste-python" (sem as aspas)
+no terceiro passo, [pasta do projeto] é o nome da pasta do seu projeto, se você tiver um projeto chamado "teste python", por exemplo, o nome da sua pasta será "teste-python" (sem as aspas)
   
 ###Como usar:
   
