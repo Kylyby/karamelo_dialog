@@ -23,7 +23,7 @@ def dialog(bgcolor='cyan',options=['1', '2', '3'],limit=3):
   opt.insert(1, opt_sel)
   opt.insert(3, opt_end)
   sel_index = 0
-  print(*opt, sep="  ")
+  print('\n',*opt, sep="  ")
   with Input(keynames='curtsies') as karl:
       for key in Input():
         if key == "<RIGHT>":
