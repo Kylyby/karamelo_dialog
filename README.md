@@ -31,15 +31,7 @@ karamelorun = karamelo.dialog(bgcolor='red', limit=4, options=['one', 'two', 'th
 
   colors accepted for bgcolor:
   
-```py
-'black'
-'red'
-'green'
-'yellow'
-'blue'
-'purple'
-'cyan'
-```
+`'black'` `'red'` `'green'` `'yellow'` `'blue'` `'purple'` `'cyan'`
 
 At the end, the variable set above will return a value, you can use this value to define what each option does. This value always starts on 0, so the value of the option is gonna be the value of it's position -1, for example: the 3rd option is gonna have the value of 2
   
