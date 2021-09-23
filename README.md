@@ -1,50 +1,38 @@
 # karamelo_dialog
-## Karamelo ajuda você a criar facilmente uma pergunta com opções no console python
+## Karamelo helps you easily create a selection menu that doesn’t require the user to manually type in the option they want to choose 
+### How to install:
 
-Para utilizá-lo, você deve primeiramente instalar uma dependência com o sequinte comando no terminal/shell:
-
-pip3 install curtsies
-
-agora digite os seguintes comandos no shell para instalar o Karamelo no replit
+In the terminal/shell, type in:
 
 ```
-  git clone https://github.com/Kylyby/karamelo_dialog.git
+pip install karamelo
 ```
-```
-  mv /home/runner/[pasta do projeto]/karamelo_dialog/karamelo.py /home/runner/[pasta do projeto]/
-```
-```
-  rm -rf karamelo_dialog
-```
-
   
-no terceiro passo, [pasta do projeto] é o nome da pasta do seu projeto, se você tiver um projeto chamado "teste python", por exemplo, o nome da sua pasta será "teste-python" (sem as aspas)
+### How to use:
   
-### Como usar:
-  
-comece importando o arquivo:
+begin by importing the package:
   
 ```
 import karamelo
 ```
   
-depois defina uma variável e nela chame a função:
-```
+Then set a variable and call the function in it:
+```py
 karamelorun = karamelo.dialog()
 ```
   
-Dentro dela temos três parâmetros: Cor de fundo da seleção (bgcolor), número de opções que podem ser selecionadas (limit) e as opções (options)
-  bgcolor deve ser uma string, limit uma int e options uma lista
+inside the function we have 3 parameters: background color of the selection(bgcolor), number of options that can be selected(limit) and the options(options)
+  bgcolor must be a string, limit an integer and options a list
   
-  Exemplo:
+  Example:
   
 ```py
-karamelorun = karamelo.dialog(bgcolor=red, limit=4, options=['um', 'dois', 'três', 'quatro'])
+karamelorun = karamelo.dialog(bgcolor='red', limit=4, options=['one', 'two', 'three', 'four'])
 ```
 
-  cores aceitas noo bgcolor:
+  colors accepted for bgcolor:
   
-```
+```py
 'black'
 'red'
 'green'
@@ -54,32 +42,40 @@ karamelorun = karamelo.dialog(bgcolor=red, limit=4, options=['um', 'dois', 'trê
 'cyan'
 ```
 
-no final, a varável definida acima vai retornal um valor, você pode utilizá-lo para definir o que cada opção faz. Ele sempre começa do zero, ou seja, o valor da opção vai ser a posição dela menos 1, por exemplo: a 3ª opção vai ter o valor de 2
+At the end, the variable set above will return a value, you can use this value to define what each option does. This value always starts on 0, so the value of the option is gonna be the value of it's position -1, for example: the 3rd option is gonna have the value of 2
   
-exemplo do uso:
+use demonstration:
 
-```
+```py
 if karamelorun == 0:
-  print('abacaxi')
+  print('pineapple')
 elif karamelorun == 1:
   print('banana')
 elif karamelorun == 2:
-  print('maçã')
+  print('apple')
 elif karamelorun == 3:
-  print('uva')
+  print('grape')
 ```
   
-No final desse exemplo ficamos com o seguinte código:
+at the end of this demonstration we have the following code:
   
-```
-karamelorun = karamelo.dialog(bgcolor=red, limit=4, options=['um', 'dois', 'três', 'quatro'])
+```py
+import karamelo
+
+karamelorun = karamelo.dialog(bgcolor='red', limit=4, options=['one', 'two', 'three', 'four'])
 
 if karamelorun == 0:
-  print('abacaxi')
+  print('pineapple')
 elif karamelorun == 1:
   print('banana')
 elif karamelorun == 2:
-  print('maçã')
+  print('apple')
 elif karamelorun == 3:
-  print('uva')
+  print('grape')
 ```
+#### Output of each option:
+
+![image](https://user-images.githubusercontent.com/91160942/134447080-116d3050-476b-46fb-b285-f1dffbc8735d.png)     ![image](https://user-images.githubusercontent.com/91160942/134447164-c0fc24ac-bd46-402a-a800-80cd535ec055.png)
+
+![image](https://user-images.githubusercontent.com/91160942/134447188-71053ed2-513e-4e8e-991e-bf39003368d7.png)     ![image](https://user-images.githubusercontent.com/91160942/134447236-b733ef4c-3b9e-4b2e-b334-6dce533d20af.png)
+
