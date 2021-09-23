@@ -12,7 +12,7 @@ pip install karamelo
   
 begin by importing the package:
   
-```
+```py
 import karamelo
 ```
   
@@ -21,8 +21,7 @@ Then set a variable and call the function in it:
 karamelorun = karamelo.dialog()
 ```
   
-inside the function we have 3 parameters: background color of the selection(bgcolor), number of options that can be selected(limit) and the options(options)
-  bgcolor must be a string, limit an integer and options a list
+inside the function we have 3 parameters: background color of the selection(bgcolor), number of options that can be selected(limit) and the options(options). bgcolor must be a string, limit an integer and options a list
   
   Example:
   
